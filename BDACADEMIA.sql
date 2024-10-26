@@ -9,7 +9,7 @@ CREATE TABLE CLIENTE (
 );
 
 INSERT INTO CLIENTE 
-VALUES (1, 'lucas', 18, 'masculino', 'basico', '958212986', 'ativo');
+VALUES (1, 'lucas', 18, 'masculino', 'basico', '912345678', 'ativo');
 
 CREATE TABLE funcionario (
     ID_funcionario          INT             PRIMARY KEY NOT NULL, 
@@ -27,7 +27,7 @@ VALUES (1, 'kevin', 18, 'masculino', 'atendente', '17:00', '23:00');
 CREATE TABLE feedback (
     ID_feedback             INT             PRIMARY KEY NOT NULL,
     feedback_avaliacao      VARCHAR(20)     NOT NULL,
-    feedback_sugest„o       VARCHAR(50)     NOT NULL,
+    feedback_sugest√£o       VARCHAR(50)     NOT NULL,
     ID_cliente              INT             NOT NULL,
     FOREIGN KEY (ID_cliente) REFERENCES CLIENTE (ID_cliente)
 );
@@ -76,7 +76,7 @@ CREATE TABLE equipamentos (
 );
 
 INSERT INTO equipamentos (nome, quantIDade, tipo) 
-VALUES ('supino', 1, 'forÁa');
+VALUES ('supino', 1, 'for√ßa');
 
 CREATE TABLE pagamentos (
     ID                INT             IDENTITY PRIMARY KEY,
